@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 /*
  * “The size, isEmpty, get, set, iterator, and listIterator operations run in constant time. 
@@ -7,33 +8,43 @@ import java.util.*;
  */
 public class IsEmpty {
     public static void main(String args[]){
-        LinkedList<String> set = new LinkedList<String>();
+        ArrayList<String> set = new ArrayList<String>();
 
         double inicio = System.currentTimeMillis();
 
-        for(int i = 0; i<13; i++ ){
+        for(int i = 0; i < 50; i++ ){
             set.isEmpty();
         }
 
         double primeiroTempo = System.currentTimeMillis() - inicio;
 
-        
         inicio = System.currentTimeMillis();
 
-        for(int i = 0; i<5; i++ ){
+        for(int i = 0; i < 100; i++ ){
             set.isEmpty();
         }
         
         double segundoTempo = System.currentTimeMillis() - inicio;
+
+        inicio = System.currentTimeMillis();
+
+        for(int i = 0; i < 150; i++ ){
+            set.isEmpty();
+        }
+        
+        double terceiroTempo = System.currentTimeMillis() - inicio;
         
 
-        System.out.println("Primeira execução, com 13 verificações: " + primeiroTempo + "ms");
-        System.out.println("   " + (primeiroTempo / 13) + "ms por execução");
+        System.out.println("Primeira execução, com 50 verificações: " + primeiroTempo + "ms");
+        System.out.println("   " + (primeiroTempo / 50) + "ms por execução");
         
-        System.out.println("Segunda execução, com 5 verificações: " + segundoTempo + "ms");
-        System.out.println("   " + (segundoTempo / 5) + "ms por execução");
+        System.out.println("Segunda execução, com 100 verificações: " + segundoTempo + "ms");
+        System.out.println("   " + (segundoTempo / 100) + "ms por execução");
         
-        System.out.println("\nConclusão: O(n)");
+        System.out.println("Terceira execução, com 150 verificações: " + segundoTempo + "ms");
+        System.out.println("   " + (terceiroTempo / 150) + "ms por execução");
+        
+        System.out.println("\nConclusão: O(k)");
         
         //Unidade de medida: milissegundos
         //Runed in a MacBook Pro with M1 Chip
