@@ -61,5 +61,8 @@ public class Sort{
         System.out.println("");
         System.out.println("FINAL TIME: " + A.length);
         System.out.println(finalTime/1000);
+        
+        //Unidade de Medida: segundos
+        //Runed in a MacBook Pro with M1 Chip
     }
 }
