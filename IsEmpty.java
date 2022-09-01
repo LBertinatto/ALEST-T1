@@ -1,53 +1,49 @@
-import java.lang.reflect.Array;
-import java.util.*;
 /*
- * “The size, isEmpty, get, set, iterator, and listIterator operations run in constant time. 
- * The add operation runs in amortized constant time, that is, adding n elements requires O(n) time. 
- * All of the other operations run in linear time (roughly speaking). The constant factor is low compared
- *  to that for the LinkedList implementation.” Fonte: ORACLE, Java SE API [4]
- */
+*   public boolean isEmpty(){
+*       return size == 0;
+*   }
+*
+* “The size, isEmpty, get, set, iterator, and listIterator operations run in constant time. 
+* The add operation runs in amortized constant time, that is, adding n elements requires O(n) time. 
+* All of the other operations run in linear time (roughly speaking). The constant factor is low compared
+*  to that for the LinkedList implementation.” Fonte: ORACLE, Java SE API [4]
+*/
+
+import java.util.*;
 public class IsEmpty {
     public static void main(String args[]){
-        ArrayList<String> set = new ArrayList<String>();
+        //Inicializando ArrayList para realizar a contagem de operaçoes do método.
+        ArrayList<Integer> set = new ArrayList<Integer>();
 
-        double inicio = System.currentTimeMillis();
+        //O método isEmpty() é implementado da seguinte maneira:
 
-        for(int i = 0; i < 50; i++ ){
-            set.isEmpty();
+        //    public boolean isEmpty() {
+        //        return size == 0;
+        //    }
+        //
+        //Fonte: https://hg.openjdk.java.net/jdk8/jdk8/jdk/file/687fd7c7986d/src/share/classes/java/util/ArrayList.java
+
+        //Será utilizado um "for" para iniciar diferentes contagens, executar o método e adicionar 99 elementos ao ArrayList.
+        //Após cada execução será mostrado no console o número de operações realizadas.
+
+        for (int i = 0; i < 100; i++){
+            //Gerando o contador
+            int count = 0;
+
+            //Simulação do método:
+            boolean aux = set.size() == 0;
+
+            //Operação "=":
+            count++;
+            //Operação "return":
+            count++;
+            
+            System.out.println("#" + (i + 1) + " execução: " + count);
+
+            set.add((int)Math.round(Math.random() * 100));
         }
 
-        double primeiroTempo = System.currentTimeMillis() - inicio;
-
-        inicio = System.currentTimeMillis();
-
-        for(int i = 0; i < 100; i++ ){
-            set.isEmpty();
-        }
-        
-        double segundoTempo = System.currentTimeMillis() - inicio;
-
-        inicio = System.currentTimeMillis();
-
-        for(int i = 0; i < 150; i++ ){
-            set.isEmpty();
-        }
-        
-        double terceiroTempo = System.currentTimeMillis() - inicio;
-        
-
-        System.out.println("Primeira execução, com 50 verificações: " + primeiroTempo + "ms");
-        System.out.println("   " + (primeiroTempo / 50) + "ms por execução");
-        
-        System.out.println("Segunda execução, com 100 verificações: " + segundoTempo + "ms");
-        System.out.println("   " + (segundoTempo / 100) + "ms por execução");
-        
-        System.out.println("Terceira execução, com 150 verificações: " + segundoTempo + "ms");
-        System.out.println("   " + (terceiroTempo / 150) + "ms por execução");
-        
-        System.out.println("\nConclusão: O(k)");
-        
-        //Unidade de medida: milissegundos
-        //Runed in a MacBook Pro with M1 Chip
+        //Conclusão: Em todos os casos o método realiza apenas uma operação, caracterizando O(k).
     }
 }
 
