@@ -2,7 +2,7 @@
 Códigos para o Trabalho 1 de Algoritmos Estruturas de Dados I
 
 - Leonardo Bertinatto
-- Caio xxxxx
+- Caio Fernandes
 
 ## Classes de Complexidade Analisadas:
 - IsEmpty() - O(k)
