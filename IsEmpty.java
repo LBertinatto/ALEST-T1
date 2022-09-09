@@ -1,8 +1,4 @@
 /*
-*   public boolean isEmpty(){
-*       return size == 0;
-*   }
-*
 * “The size, isEmpty, get, set, iterator, and listIterator operations run in constant time. 
 * The add operation runs in amortized constant time, that is, adding n elements requires O(n) time. 
 * All of the other operations run in linear time (roughly speaking). The constant factor is low compared
