@@ -16,7 +16,6 @@ public class Offer {
         double finalTime = System.currentTimeMillis();
         
         System.out.println("Executada 10 vezes:");
-        // System.out.println(queue);
         System.out.println(finalTime - beginTime);
 
         capacidade = 100;
@@ -28,7 +27,6 @@ public class Offer {
         finalTime = System.currentTimeMillis();
         
         System.out.println("\n\nExecutada 100 vezes:");
-        // System.out.println(queue);
         System.out.println(finalTime - beginTime);
 
         capacidade = 1000;
@@ -40,7 +38,6 @@ public class Offer {
         finalTime = System.currentTimeMillis();
         
         System.out.println("\n\nExecutada 1000 vezes:");
-        // System.out.println(queue);
         System.out.println(finalTime - beginTime);
 
         capacidade = 10000;
@@ -52,7 +49,6 @@ public class Offer {
         finalTime = System.currentTimeMillis();
         
         System.out.println("\n\nExecutada 10000 vezes:");
-        // System.out.println(queue);
         System.out.println(finalTime - beginTime);
 
         capacidade = 50000;
@@ -64,7 +60,6 @@ public class Offer {
         finalTime = System.currentTimeMillis();
         
         System.out.println("\n\nExecutada 50000 vezes:");
-        // System.out.println(queue);
         System.out.println(finalTime - beginTime);
 
         capacidade = 100000;
@@ -75,8 +70,7 @@ public class Offer {
         }
         finalTime = System.currentTimeMillis();
         
-        System.out.println("\n\nExecutada 100000 vezes:");
-        // System.out.println(queue);
+        System.out.println("\n\nExecutando 100000 vezes:");
         System.out.println(finalTime - beginTime);
 /*
  * Implementation note: this implementation provides O(log(n)) time for the 

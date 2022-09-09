@@ -54,14 +54,96 @@ public class Sort{
     }
 //-----------------------------------------------TESTES--------------------------------------------
     public static void main(String[] args) {
-        int A[] = {0,12,14,18,2,3,25,89,76,55,34,90,49,33};
+        int capacidade = 1000;
+        int A[] = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        double beginTime = System.currentTimeMillis();
+
         quicksort(A, 0, A.length-1);
 
         double finalTime = System.currentTimeMillis();
-        System.out.println("");
-        System.out.println("FINAL TIME: " + A.length);
-        System.out.println(finalTime/1000);
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
         
+        capacidade = 10000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+        
+        capacidade = 100000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+        
+        capacidade = 1000000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+        
+        capacidade = 10000000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+
         //Unidade de Medida: segundos
         //Runed in a MacBook Pro with M1 Chip
     }
