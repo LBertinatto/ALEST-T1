@@ -7,7 +7,7 @@ Códigos para o Trabalho 1 de Algoritmos Estruturas de Dados I
 ## Classes de Complexidade Analisadas:
 - IsEmpty() - O(k)
 - Offer() - O(log(n))
-- trimToSize() - O(n)
+- forEach() - O(n)
 - Sort() - O(n log(n))
 
  #### Planilha para gráfico de Análise Assintótica: 
