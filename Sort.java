@@ -54,7 +54,7 @@ public class Sort{
     }
 //-----------------------------------------------TESTES--------------------------------------------
     public static void main(String[] args) {
-        int capacidade = 1000;
+        int capacidade = 10000;
         int A[] = new int[capacidade];
 
         for (int i = 0; i < capacidade; i++){
@@ -72,7 +72,7 @@ public class Sort{
 
         //////////////////////////////////////////////////////////////////////////////////
         
-        capacidade = 10000;
+        capacidade = 50000;
         A = new int[capacidade];
 
         for (int i = 0; i < capacidade; i++){
@@ -108,7 +108,7 @@ public class Sort{
 
         //////////////////////////////////////////////////////////////////////////////////
         
-        capacidade = 1000000;
+        capacidade = 175000;
         A = new int[capacidade];
 
         for (int i = 0; i < capacidade; i++){
@@ -126,7 +126,43 @@ public class Sort{
 
         //////////////////////////////////////////////////////////////////////////////////
         
-        capacidade = 10000000;
+        capacidade = 250000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+        
+        capacidade = 375000;
+        A = new int[capacidade];
+
+        for (int i = 0; i < capacidade; i++){
+            A[i] = (int)Math.floor(Math.random() * 100);
+        }
+
+        beginTime = System.currentTimeMillis();
+
+        quicksort(A, 0, A.length-1);
+
+        finalTime = System.currentTimeMillis();
+
+        System.out.println("\nExecutando com um vetor com tamanho " + A.length + ":");
+        System.out.println(finalTime - beginTime);
+
+        //////////////////////////////////////////////////////////////////////////////////
+        
+        capacidade = 500000;
         A = new int[capacidade];
 
         for (int i = 0; i < capacidade; i++){
