@@ -76,9 +76,9 @@ public class IsEmpty {
 }
 ```
 
-<img src="https://github.com/LBertinatto/ALEST-T1/IsEmpty_Tabela">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/IsEmpty_Tabela.png">
 
-<img src="https://github.com/LBertinatto/ALEST-T1/IsEmpty_Grafico">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/IsEmpty_Grafico.png">
 
   
 
@@ -130,9 +130,9 @@ public class Offer {
 }
 ```
 
-<img src="https://github.com/LBertinatto/ALEST-T1/Offer_Tabela">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/Offer_Tabela.png">
 
-<img src="https://github.com/LBertinatto/ALEST-T1/Offer_Grafico">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/Offer_Grafico.png">
 
   
 
@@ -192,9 +192,9 @@ public class ForEach{
 }
 ```
 
-<img src="https://github.com/LBertinatto/ALEST-T1/ForEach_Tabela">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/assets/ForEach_Tabela.png">
 
-<img src="https://github.com/LBertinatto/ALEST-T1/ForEach_Grafico">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/assets/ForEach_Grafico.png">
 
   
 
@@ -291,9 +291,9 @@ public class Sort{
 }
 ```
 
-<img src="https://github.com/LBertinatto/ALEST-T1/Sort_Tabela">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/Sort_Tabela.png">
 
-<img src="https://github.com/LBertinatto/ALEST-T1/Sort_Grafico">
+<img src="https://github.com/LBertinatto/ALEST-T1/assets/Sort_Grafico.png">
 
   
 
