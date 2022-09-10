@@ -76,9 +76,9 @@ public class IsEmpty {
 }
 ```
 
-![](https://t36934986.p.clickup-attachments.com/t36934986/dc85b495-f250-4634-8b67-9facdb16b361/image.png)
+<img src="https://github.com/LBertinatto/ALEST-T1/IsEmpty_Tabela">
 
-![](https://t36934986.p.clickup-attachments.com/t36934986/ed36590a-62ec-46a1-ab07-a2c04c007273/image.png)
+<img src="https://github.com/LBertinatto/ALEST-T1/IsEmpty_Grafico">
 
   
 
@@ -130,13 +130,9 @@ public class Offer {
 }
 ```
 
-  
+<img src="https://github.com/LBertinatto/ALEST-T1/Offer_Tabela">
 
-![](https://t36934986.p.clickup-attachments.com/t36934986/d477aab2-f904-40f0-b456-007bc5e8498c/image.png)
-
-  
-
-![](https://t36934986.p.clickup-attachments.com/t36934986/30d448a5-181d-42b6-9221-948c83ce11db/image.png)
+<img src="https://github.com/LBertinatto/ALEST-T1/Offer_Grafico">
 
   
 
@@ -196,13 +192,9 @@ public class ForEach{
 }
 ```
 
-  
+<img src="https://github.com/LBertinatto/ALEST-T1/ForEach_Tabela">
 
-![](https://t36934986.p.clickup-attachments.com/t36934986/41d05b63-f216-41df-98ca-de2d03cfa4b9/image.png)
-
-  
-
-![](https://t36934986.p.clickup-attachments.com/t36934986/ca443e2c-3f45-43e9-b359-15b3cb8438a0/image.png)
+<img src="https://github.com/LBertinatto/ALEST-T1/ForEach_Grafico">
 
   
 
@@ -299,13 +291,9 @@ public class Sort{
 }
 ```
 
-  
+<img src="https://github.com/LBertinatto/ALEST-T1/Sort_Tabela">
 
-![](https://t36934986.p.clickup-attachments.com/t36934986/51b5687f-dfd5-4348-bc2e-32d9e18dcd14/image.png)
-
-  
-
-![](https://t36934986.p.clickup-attachments.com/t36934986/d1e44eca-9b1f-416c-9771-669cb174c4b1/image.png)
+<img src="https://github.com/LBertinatto/ALEST-T1/Sort_Grafico">
 
   
 
